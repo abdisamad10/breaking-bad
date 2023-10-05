@@ -1,13 +1,11 @@
 import React from 'react'
 import CharacterListItem from './CharacterListItem';
-function CharacterList(items) {
+function CharacterList({items}) {
   return (
    <section className='cards'>
-        {
-            items.map((item) => (
-                <CharacterListItem item={item} key={char_id}/>
-            ))
-        }
+        {items && items.map((item) => (
+        <CharacterListItem item={item} key={item.char_id} />
+      ))}
    </section>
   )
 }

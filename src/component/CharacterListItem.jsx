@@ -33,3 +33,5 @@ const CharacterListItem = (item) => {
     </div>
    )
 }
+
+export default CharacterListItem;
